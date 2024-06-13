@@ -1,0 +1,1 @@
+An online website that sells burgers. It suggests users to not only customize their burgers by adding or removing ingredients but also create their own burger from the ingredients in stock. As your first task, you've got to enable the different layers of the burger on the screen. Create a render for each ingredient and make sure that it displays the selected layer.
