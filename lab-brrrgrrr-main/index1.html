@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <title>Login & Sign Up Form</title> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">LOGIN</span>
+
+                <form action="#" id="loginForm">
+                    <div class="input-field">
+                        <input type="text" id="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" id="loginButton" value="Login">
+                        
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link" id="signupButton">Sign Up</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form signup">
+                <span class="title">SIGN UP</span>
+            
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="signupName" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="signupEmail" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signupPassword" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="confirmPassword" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+            
+                    <div class="input-field button">
+                        <input type="button" value="Signup" id="signupSubmitButton">
+                        <button onclick="login()">Login</button>
+                    </div>
+                </form>
+            
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login</a>
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            
+            // You can add more validation checks if needed
+            if (email === '' || password === '') {
+                alert('Please enter both Email and Password.');
+                return false;
+            }
+            
+            // Additional checks can be performed here, such as checking the validity of email format.
+
+            return true;
+        }
+    </script>
+    
+</body>
+    <script src="script1.js"></script>
+    <script src="app.js"></script> 
+</html>
